@@ -1,0 +1,62 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Compile Class 1",
+      "type": "shell",
+      "command": "mkdir -p out && javac -d out src/class01/*.java",
+      "problemMatcher": [
+        "$javac"
+      ],
+      "group": "build"
+    },
+    {
+      "label": "Run HelloMentor",
+      "type": "shell",
+      "command": "java",
+      "args": [
+        "-cp",
+        "out",
+        "HelloMentor"
+      ],
+      "dependsOn": "Compile Class 1",
+      "problemMatcher": []
+    },
+    {
+      "label": "Run StringLab",
+      "type": "shell",
+      "command": "java",
+      "args": [
+        "-cp",
+        "out",
+        "StringLab"
+      ],
+      "dependsOn": "Compile Class 1",
+      "problemMatcher": []
+    },
+    {
+      "label": "Run VarLab",
+      "type": "shell",
+      "command": "java",
+      "args": [
+        "-cp",
+        "out",
+        "VarLab"
+      ],
+      "dependsOn": "Compile Class 1",
+      "problemMatcher": []
+    },
+    {
+      "label": "Run StudentScoreAnalyzer",
+      "type": "shell",
+      "command": "java",
+      "args": [
+        "-cp",
+        "out",
+        "StudentScoreAnalyzer"
+      ],
+      "dependsOn": "Compile Class 1",
+      "problemMatcher": []
+    }
+  ]
+}
