@@ -57,6 +57,18 @@
       ],
       "dependsOn": "Compile Class 1",
       "problemMatcher": []
+    },
+    {
+      "label": "Run StudentScoreAnalyzerV2",
+      "type": "shell",
+      "command": "java",
+      "args": [
+        "-cp",
+        "out",
+        "StudentScoreAnalyzerV2"
+      ],
+      "dependsOn": "Compile Class 1",
+      "problemMatcher": []
     }
   ]
 }
