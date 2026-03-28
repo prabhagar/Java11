@@ -4,7 +4,7 @@
     {
       "label": "Compile Class 1",
       "type": "shell",
-      "command": "mkdir -p out && javac -d out src/class01/*.java",
+      "command": "mkdir -p out && javac -d out src/class01/*.java src/class02/*.java",
       "problemMatcher": [
         "$javac"
       ],
@@ -17,7 +17,7 @@
       "args": [
         "-cp",
         "out",
-        "HelloMentor"
+        "class01.HelloMentor"
       ],
       "dependsOn": "Compile Class 1",
       "problemMatcher": []
@@ -29,7 +29,7 @@
       "args": [
         "-cp",
         "out",
-        "StringLab"
+        "class01.StringLab"
       ],
       "dependsOn": "Compile Class 1",
       "problemMatcher": []
@@ -41,7 +41,7 @@
       "args": [
         "-cp",
         "out",
-        "VarLab"
+        "class01.VarLab"
       ],
       "dependsOn": "Compile Class 1",
       "problemMatcher": []
@@ -53,7 +53,7 @@
       "args": [
         "-cp",
         "out",
-        "StudentScoreAnalyzer"
+        "class01.StudentScoreAnalyzer"
       ],
       "dependsOn": "Compile Class 1",
       "problemMatcher": []
@@ -65,7 +65,19 @@
       "args": [
         "-cp",
         "out",
-        "StudentScoreAnalyzerV2"
+        "class01.StudentScoreAnalyzerV2"
+      ],
+      "dependsOn": "Compile Class 1",
+      "problemMatcher": []
+    },
+    {
+      "label": "Run MonthlySalesAnalyzer",
+      "type": "shell",
+      "command": "java",
+      "args": [
+        "-cp",
+        "out",
+        "class02.MonthlySalesAnalyzer"
       ],
       "dependsOn": "Compile Class 1",
       "problemMatcher": []

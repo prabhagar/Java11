@@ -1,3 +1,5 @@
+package class01;
+
 public class StudentScoreAnalyzer {
     public static void main(String[] args) {
         String input = "Asha:78, Ravi:92, Mei:88, Omar:92";

@@ -1,3 +1,5 @@
+package class01;
+
 import java.util.ArrayList;
 
 public class VarLab {
