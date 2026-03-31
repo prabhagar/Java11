@@ -27,10 +27,12 @@ public class ProductService {
     }
             
     public boolean deleteById(Long id) {
-        // Exercise for today:
-        // 1. Check if the product exists.
-        // 2. If it does not exist, return false.
-        // 3. If it exists, delete it and return true.
-        return false;
+        Optional<Product> product = productRepository.findById(id);
+        if (product.isPresent()) {
+            productRepository.deleteById(id);
+            return true;
+        } else {
+            return false;
+        }
     }
 }

@@ -46,6 +46,11 @@ public class ProductController {
         // Exercise for today:
         // If productService.deleteById(id) returns true, return 204 No Content.
         // Otherwise return 404 Not Found.
-        return ResponseEntity.status(HttpStatus.NOT_IMPLEMENTED).build();
+        boolean deleted = productService.deleteById(id);
+        if (deleted) {
+            return ResponseEntity.noContent().build();
+        } else {
+            return ResponseEntity.notFound().build();
+        }
     }
 }
