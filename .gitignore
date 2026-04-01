@@ -1,3 +1,6 @@
 out/
 springboot-lab/target/
 springboot-lab/data/
+springboot-lab/node_modules/
+springboot-lab/playwright-report/
+springboot-lab/test-results/
